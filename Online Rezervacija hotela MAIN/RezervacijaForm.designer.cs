@@ -38,9 +38,10 @@
             // 
             // SobaButton
             // 
-            this.SobaButton.Location = new System.Drawing.Point(77, 42);
+            this.SobaButton.Location = new System.Drawing.Point(103, 52);
+            this.SobaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SobaButton.Name = "SobaButton";
-            this.SobaButton.Size = new System.Drawing.Size(102, 33);
+            this.SobaButton.Size = new System.Drawing.Size(136, 41);
             this.SobaButton.TabIndex = 0;
             this.SobaButton.Text = "Soba";
             this.SobaButton.UseVisualStyleBackColor = true;
@@ -49,16 +50,19 @@
             // ListBoxRezervacija
             // 
             this.ListBoxRezervacija.FormattingEnabled = true;
-            this.ListBoxRezervacija.Location = new System.Drawing.Point(87, 101);
+            this.ListBoxRezervacija.ItemHeight = 16;
+            this.ListBoxRezervacija.Location = new System.Drawing.Point(116, 124);
+            this.ListBoxRezervacija.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ListBoxRezervacija.Name = "ListBoxRezervacija";
-            this.ListBoxRezervacija.Size = new System.Drawing.Size(247, 290);
+            this.ListBoxRezervacija.Size = new System.Drawing.Size(328, 356);
             this.ListBoxRezervacija.TabIndex = 2;
             // 
             // SobeIGostUSobiButton
             // 
-            this.SobeIGostUSobiButton.Location = new System.Drawing.Point(445, 142);
+            this.SobeIGostUSobiButton.Location = new System.Drawing.Point(593, 175);
+            this.SobeIGostUSobiButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SobeIGostUSobiButton.Name = "SobeIGostUSobiButton";
-            this.SobeIGostUSobiButton.Size = new System.Drawing.Size(142, 41);
+            this.SobeIGostUSobiButton.Size = new System.Drawing.Size(189, 50);
             this.SobeIGostUSobiButton.TabIndex = 3;
             this.SobeIGostUSobiButton.Text = "Sobe i gost u sobi";
             this.SobeIGostUSobiButton.UseVisualStyleBackColor = true;
@@ -66,9 +70,10 @@
             // 
             // IzlazButton
             // 
-            this.IzlazButton.Location = new System.Drawing.Point(445, 303);
+            this.IzlazButton.Location = new System.Drawing.Point(593, 373);
+            this.IzlazButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.IzlazButton.Name = "IzlazButton";
-            this.IzlazButton.Size = new System.Drawing.Size(142, 41);
+            this.IzlazButton.Size = new System.Drawing.Size(189, 50);
             this.IzlazButton.TabIndex = 5;
             this.IzlazButton.Text = "Izlaz";
             this.IzlazButton.UseVisualStyleBackColor = true;
@@ -76,9 +81,10 @@
             // 
             // DodajButton
             // 
-            this.DodajButton.Location = new System.Drawing.Point(445, 220);
+            this.DodajButton.Location = new System.Drawing.Point(593, 271);
+            this.DodajButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajButton.Name = "DodajButton";
-            this.DodajButton.Size = new System.Drawing.Size(142, 41);
+            this.DodajButton.Size = new System.Drawing.Size(189, 50);
             this.DodajButton.TabIndex = 6;
             this.DodajButton.Text = "Dodaj";
             this.DodajButton.UseVisualStyleBackColor = true;
@@ -86,9 +92,10 @@
             // 
             // GostUSobiButton
             // 
-            this.GostUSobiButton.Location = new System.Drawing.Point(232, 42);
+            this.GostUSobiButton.Location = new System.Drawing.Point(309, 52);
+            this.GostUSobiButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.GostUSobiButton.Name = "GostUSobiButton";
-            this.GostUSobiButton.Size = new System.Drawing.Size(102, 33);
+            this.GostUSobiButton.Size = new System.Drawing.Size(136, 41);
             this.GostUSobiButton.TabIndex = 7;
             this.GostUSobiButton.Text = "Gost u sobi";
             this.GostUSobiButton.UseVisualStyleBackColor = true;
@@ -96,18 +103,19 @@
             // 
             // RezervacijaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.GostUSobiButton);
             this.Controls.Add(this.DodajButton);
             this.Controls.Add(this.IzlazButton);
             this.Controls.Add(this.SobeIGostUSobiButton);
             this.Controls.Add(this.ListBoxRezervacija);
             this.Controls.Add(this.SobaButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RezervacijaForm";
             this.Text = "Rezervacija";
-      
+            this.Load += new System.EventHandler(this.RezervacijaForm_Load);
             this.ResumeLayout(false);
 
         }

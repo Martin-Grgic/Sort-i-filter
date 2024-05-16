@@ -37,16 +37,19 @@
             // ListBoxGostUSobi
             // 
             this.ListBoxGostUSobi.FormattingEnabled = true;
-            this.ListBoxGostUSobi.Location = new System.Drawing.Point(76, 60);
+            this.ListBoxGostUSobi.ItemHeight = 16;
+            this.ListBoxGostUSobi.Location = new System.Drawing.Point(101, 74);
+            this.ListBoxGostUSobi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ListBoxGostUSobi.Name = "ListBoxGostUSobi";
-            this.ListBoxGostUSobi.Size = new System.Drawing.Size(219, 303);
+            this.ListBoxGostUSobi.Size = new System.Drawing.Size(291, 372);
             this.ListBoxGostUSobi.TabIndex = 1;
             // 
             // DodajButton
             // 
-            this.DodajButton.Location = new System.Drawing.Point(394, 95);
+            this.DodajButton.Location = new System.Drawing.Point(525, 117);
+            this.DodajButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DodajButton.Name = "DodajButton";
-            this.DodajButton.Size = new System.Drawing.Size(114, 43);
+            this.DodajButton.Size = new System.Drawing.Size(152, 53);
             this.DodajButton.TabIndex = 2;
             this.DodajButton.Text = "Dodaj";
             this.DodajButton.UseVisualStyleBackColor = true;
@@ -54,9 +57,10 @@
             // 
             // UrediButton
             // 
-            this.UrediButton.Location = new System.Drawing.Point(394, 194);
+            this.UrediButton.Location = new System.Drawing.Point(525, 239);
+            this.UrediButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UrediButton.Name = "UrediButton";
-            this.UrediButton.Size = new System.Drawing.Size(114, 38);
+            this.UrediButton.Size = new System.Drawing.Size(152, 47);
             this.UrediButton.TabIndex = 3;
             this.UrediButton.Text = "Uredi";
             this.UrediButton.UseVisualStyleBackColor = true;
@@ -64,24 +68,27 @@
             // 
             // ObrisiButton
             // 
-            this.ObrisiButton.Location = new System.Drawing.Point(394, 292);
+            this.ObrisiButton.Location = new System.Drawing.Point(525, 359);
+            this.ObrisiButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ObrisiButton.Name = "ObrisiButton";
-            this.ObrisiButton.Size = new System.Drawing.Size(114, 41);
+            this.ObrisiButton.Size = new System.Drawing.Size(152, 50);
             this.ObrisiButton.TabIndex = 4;
             this.ObrisiButton.Text = "Obrisi";
             this.ObrisiButton.UseVisualStyleBackColor = true;
             // 
-            // GostUSobi
+            // GostUSobiForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.ObrisiButton);
             this.Controls.Add(this.UrediButton);
             this.Controls.Add(this.DodajButton);
             this.Controls.Add(this.ListBoxGostUSobi);
-            this.Name = "GostUSobi";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "GostUSobiForm";
             this.Text = "GostUSobi";
+            this.Load += new System.EventHandler(this.GostUSobiForm_Load);
             this.ResumeLayout(false);
 
         }

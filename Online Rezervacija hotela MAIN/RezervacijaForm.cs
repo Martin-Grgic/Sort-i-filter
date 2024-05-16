@@ -51,5 +51,10 @@ namespace Online_rezervacija_hotela_MAIN
         {
             Close();
         }
+
+        private void RezervacijaForm_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

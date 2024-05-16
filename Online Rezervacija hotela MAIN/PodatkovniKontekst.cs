@@ -106,7 +106,9 @@ namespace Online_Rezervacija_hotela_MAIN
                             g.PrezimeGosta = polja[1];
                             g.OIBGosta = polja[2];
 
-                        g.Soba = new Soba(int.Parse(polja[3]), polja[4], double.Parse(polja[5]), double.Parse(polja[6]));
+                        string[] polja2 = polja[3].Split(',');  
+
+                        g.Soba = new Soba(int.Parse(polja2[0]), polja2[1], double.Parse(polja2[2]), double.Parse(polja2[3]));
                        
 
                         
@@ -134,7 +136,7 @@ namespace Online_Rezervacija_hotela_MAIN
     }
         public List<Rezervacija> UcitajRezervaciju()
         {
-            List<Rezervacija> gost = new List<Rezervacija>();
+            List<Rezervacija> rezervacija = new List<Rezervacija>();
 
 
             if (File.Exists(datRezervacija))
@@ -170,7 +172,7 @@ namespace Online_Rezervacija_hotela_MAIN
         }
         public void SpremiRezervaciju(Rezervacija r)
         {
-            this.rezervacija.Add(r);
+            rezervacija.Add(r);
             using (StreamWriter sw = new StreamWriter(datGostUSobi))
             {
 

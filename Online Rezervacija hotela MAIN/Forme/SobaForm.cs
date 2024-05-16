@@ -30,7 +30,7 @@ namespace Online_rezervacija_hotela_MAIN
 
         private void UrediButton_Click(object sender, EventArgs e)
         {
-            new Uredi().Show();
+            new UrediSobu().Show();
         }
 
         private void RefreshSobe()

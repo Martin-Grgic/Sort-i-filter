@@ -44,7 +44,7 @@ namespace Online_Rezervacija_hotela_MAIN
         }
 
         //Overrideanje ToStringa() da nam ispisuje željene atribute
-        public override string ToString() => this.Gost.ImeGosta + ' ' + this.checkIn.ToString() + ',' + this.Soba.BrojSobe;
+        public override string ToString() => this.Gost.ImeGosta + ' ' + this.checkIn.ToString() + ',' + this.Gost.Soba.BrojSobe;
 
 
     }
